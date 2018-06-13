@@ -1,0 +1,134 @@
+@charset "utf-8";
+/*
+Template Name: Save The Earth
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+File: Layout CSS
+*/
+
+@import url("homepage.css");
+@import url("navi.css");
+@import url("forms.css");
+@import url("tables.css");
+
+html{overflow-y:scroll;}
+body{margin:0; padding:0; font-size:13px; font-family:verdana, Arial, Helvetica, sans-serif; color:#FFFFFF; background-color:#1F1F1F;}
+
+.justify{text-align:justify;}
+.bold{font-weight:bold;}
+.center{text-align:center;}
+.right{text-align:right;}
+.nostart{margin:0; padding:0; list-style-type:none;}
+
+.clear::after{content:"."; display:block; height:0; clear:both; visibility:hidden;}
+br.clear{clear:both; margin-top:-15px;}
+
+a{outline:none; text-decoration:none;}
+
+.fl_left, .imgl{float:left;}
+.fl_right, .imgr{float:right;}
+
+img{margin:0; padding:0; border:0;}
+.imgl, .imgr{border:1px solid #203931; padding:5px; color:#666666; background-color:#F7F7F7;}
+.imgl{margin:0 8px 8px 0; clear:left;}
+.imgr{margin:0 0 8px 8px; clear:right;}
+
+/* ----------------------------------------------Wrapper------------------------------------- */
+
+div.wrapper{position:relative; float:left; width:100%; margin:0; text-align:left;}
+div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, div.wrapper h6{margin:0 0 15px 0; padding:0 0 15px 0; line-height:normal; font-weight:normal; font-size:36px; font-family:Georgia, "Times New Roman", Times, serif; border-bottom:1px solid #D2D2D2;}
+.col1{color:#333333; background-color:#D4D2D0; border-top:10px solid #26443A;}
+.col2{color:#FFFFFF; background-color:#3E7060;}
+.col3{color:#5E5E5E; background-color:#FFFFFF;}
+.col4{color:#FFFFFF; background-color:#203931; border-top:10px solid #666666;}
+.col5{color:#FFFFFF; background-color:#1F1F1F;}
+
+/* ----------------------------------------------Generalise------------------------------------- */
+
+#head, #intro, #breadcrumb, #homecontent, #container, #footer, #copyright{position:relative; width:960px; margin:0 auto; text-align:left;}
+/* ----------------------------------------------Head------------------------------------- */
+
+#head{height:100px;}
+#head h1, #head p, #head ul, #head a{margin:0; padding:0; list-style:none; line-height:normal; border:none;}
+#head h1 a{position:absolute; top:15px; left:0; font-size:36px; font-weight:normal; color:#333333; background-color:#D4D2D0; font-family:Georgia, "Times New Roman", Times, serif;}
+#head p{display:block; position:absolute; top:60px; left:0; font-size:16px; font-family:Georgia, "Times New Roman", Times, serif;}
+
+/* ----------------------------------------------Head------------------------------------- */
+
+#intro{padding:35px 0;}
+#intro a{color:#FFFFFF; background-color:#3E7060; text-decoration:underline;}
+#intro h2, #intro p{margin:0; padding:0;}
+#intro p{margin-top:20px;}
+#intro div.imgholder{display:block; float:left; padding:5px; color:#FFFFFF; background-color:#D4D2D0; border:5px solid #26443A;}
+#intro div.introtext{display:block; float:right; width:585px; line-height:1.5em;}
+#intro p.more{display:block; width:585px; text-align:right;}
+#intro p.more a{padding:5px 10px; font-weight:bold; color:#FFFFFF; background-color:#26443A; text-decoration:none;}
+
+/* ----------------------------------------------Breadcrumb------------------------------------- */
+
+#breadcrumb{padding:35px 0;}
+#breadcrumb a{font-weight:bold; color:#FFFFFF; background-color:#3E7060;}
+#breadcrumb ul{margin:0; padding:0; list-style:none;}
+#breadcrumb ul li{display:inline;}
+#breadcrumb ul li.first{font-weight:bold;}
+#breadcrumb ul li.current a{text-decoration:underline;}
+
+/* ----------------------------------------------Content------------------------------------- */
+
+#container{padding:15px 0;}
+#container h1, #container h2, #container h3, #container h4, #container h5, #container h6{font-family:Georgia, "Times New Roman", Times, serif; font-weight:normal; font-size:22px; margin:0 0 10px 0; padding:0;}
+#container a{color:#3E7060; background-color:#FFFFFF;}
+#content{display:block; float:left; width:660px; padding:10px 0 0 0;}
+#content #screen, #content #info{margin-bottom:15px; padding-bottom:20px; border-bottom:1px dotted #666666;}
+#content #info p{margin:0; padding:0;}
+
+/* Comments */
+
+#comments{margin-bottom:40px;}
+#comments .commentlist{margin:0; padding:0;}
+#comments .commentlist ul{margin:0; padding:0; list-style:none;}
+#comments .commentlist li.comment_odd, #comments .commentlist li.comment_even{margin:0 0 10px 0; padding:15px; list-style:none;}
+#comments .commentlist li.comment_odd{color:#666666; background-color:#F7F7F7;}
+#comments .commentlist li.comment_odd a{color:#3E7060; background-color:#F7F7F7;}
+#comments .commentlist li.comment_even{color:#666666; background-color:#E8E8E8;}
+#comments .commentlist li.comment_even a{color:#3E7060; background-color:#E8E8E8;}
+#comments .commentlist .author .name{font-weight:bold;}
+#comments .commentlist .submitdate{font-size:smaller;}
+#comments .commentlist p{margin:10px 5px 10px 0; padding:0; font-weight:normal; text-transform:none;}
+#comments .commentlist li .avatar{float:right; border:1px solid #EEEEEE; margin:0 0 0 10px;}
+
+/* ----------------------------------------------Column------------------------------------- */
+
+#column{display:block; float:right; width:270px; padding:10px 0 0 0;}
+#column .holder{display:block; width:260px; margin-bottom:15px; padding-left:10px;}
+#column .holder p{line-height:1.6em;}
+#column h2{font-size:20px; font-weight:normal; font-family:Georgia, "Times New Roman", Times, serif;}
+#column .holder p.readmore{display:block; width:100%; font-weight:bold; text-align:right; line-height:normal;}
+#column div.imgholder{display:block; width:250px; margin:0 0 10px 0; padding:4px; color:#666666; background-color:#F7F7F7; border:1px solid #203931;}
+#column .sponsors{display:block; width:270px; margin-bottom:15px;}
+#column .sponsors .title{margin:0 0 8px 10px;}
+#column .sponsors ul{margin:0; padding:0; list-style:none;}
+#column ul#banner125 li{display:inline; float:left; width:125px; height:125px; margin:0 0 10px 10px;}
+
+/* ----------------------------------------------Footer------------------------------------- */
+
+#footer{padding:15px 0;}
+#footer h2, #footer p, #footer ul, #footer a{margin:0; padding:0; font-weight:normal; list-style:none; line-height:normal;}
+#footer h2{font-size:14px; font-weight:bold; font-family:Georgia, "Times New Roman", Times, serif; margin:0 0 15px 0; padding:0 0 8px 0; border-bottom:1px dotted #FFFFFF;}
+#footer a{color:#FFFF00; background-color:#203931;}
+#footer .footbox{display:block; float:left; width:300px; margin:0 30px 0 0; padding:0;}
+#footer .twitter li{margin-bottom:25px; text-align:right;}
+#footer .twitter span{display:block; width:300px; text-align:left; margin-bottom:5px;}
+#footer .flickrbox{margin-right:0;}
+#footer .flickrbox .wrap{display:block; width:300px;}
+#footer .flickrbox .wrap .fix{clear:both;}
+#footer .flickrbox .wrap .flickr_badge_image{display:block; float:left; margin:0 15px 15px 0; width:90px; height:90px;}
+#footer .flickrbox .wrap #flickr_badge_image3, #footer .flickrbox .wrap #flickr_badge_image6, #footer .flickrbox .wrap #flickr_badge_image9{margin-right:0;}
+
+/* ----------------------------------------------Copyright------------------------------------- */
+
+#copyright{padding:15px 0; font-size:11px; text-align:center;}
+#copyright a{color:#FFFFFF; background-color:#1F1F1F;}
+#copyright p{margin:0; padding:0 10px;}
